@@ -13,6 +13,8 @@ namespace SmartStock.DAL.Data
         {
         }
 
+        //DbSets
+
         public static OptionsBuilder OptionsBuilder => new OptionsBuilder();
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
