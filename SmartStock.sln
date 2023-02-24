@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.DAL", "SmartStock.DAL\SmartStock.DAL.csproj", "{DB276C2D-1CF0-4EA8-A321-CCBB38EA4F77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB276C2D-1CF0-4EA8-A321-CCBB38EA4F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB276C2D-1CF0-4EA8-A321-CCBB38EA4F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB276C2D-1CF0-4EA8-A321-CCBB38EA4F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB276C2D-1CF0-4EA8-A321-CCBB38EA4F77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FE295D6-6F56-407C-AB10-B47DA4997980}
+	EndGlobalSection
+EndGlobal
