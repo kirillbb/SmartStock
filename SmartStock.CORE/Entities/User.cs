@@ -1,7 +1,7 @@
-﻿using SmartStock.DAL.Entities.OrderType;
+﻿using SmartStock.CORE.Entities.OrderType;
 using System.ComponentModel.DataAnnotations;
 
-namespace SmartStock.DAL.Entities
+namespace SmartStock.CORE.Entities
 {
     internal class User
     {

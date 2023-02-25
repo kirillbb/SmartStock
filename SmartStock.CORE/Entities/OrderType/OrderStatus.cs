@@ -1,4 +1,4 @@
-﻿namespace SmartStock.DAL.Entities.OrderType
+﻿namespace SmartStock.CORE.Entities.OrderType
 {
     public enum OrderStatus
     {

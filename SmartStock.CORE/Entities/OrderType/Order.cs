@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SmartStock.DAL.Entities.OrderType
+namespace SmartStock.CORE.Entities.OrderType
 {
     public class Order
     {
         [Key]
+        [Column("OrderId")]
         public int Id { get; set; }
 
         [Required]
@@ -13,10 +15,13 @@ namespace SmartStock.DAL.Entities.OrderType
         [Required]
         public string CustomerAddress { get; set; }
 
-        public ICollection<OrderProduct> OrderProducts { get; set; }
 
+        [Required]
         public decimal TotalPrice { get; set; }
 
-        public OrderStatus Status { get; set; } = OrderStatus.Processing;
+        [Required]
+        public OrderStatus Status { get; set; }
+        
+        public ICollection<OrderProduct> OrderProducts { get; set; }
     }
 }
