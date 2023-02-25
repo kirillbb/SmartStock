@@ -1,6 +1,8 @@
-﻿namespace SmartStock.BLL.DTOs.OrderTypeDTO
+﻿using SmartStock.BLL.DTOs.OrderType;
+
+namespace SmartStock.BLL.ViewModels.OrderType
 {
-    public class OrderDto
+    internal class OrderViewModel
     {
         public int Id { get; set; }
 
@@ -12,6 +14,6 @@
 
         public OrderStatus Status { get; set; }
 
-        public ICollection<OrderProductDto> OrderProducts { get; set; }
+        public ICollection<OrderProductViewModel> OrderProducts { get; set; }
     }
 }

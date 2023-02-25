@@ -1,6 +1,6 @@
-﻿using SmartStock.BLL.DTOs.OrderTypeDTO;
+﻿using SmartStock.BLL.DTOs.OrderType;
 
-namespace SmartStock.BLL.DTOs.ProductTypeDTO
+namespace SmartStock.BLL.DTOs.ProductType
 {
     public class ProductDto
     {

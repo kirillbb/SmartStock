@@ -1,4 +1,4 @@
-﻿using SmartStock.BLL.DTOs.OrderTypeDTO;
+﻿using SmartStock.BLL.DTOs.OrderType;
 
 namespace SmartStock.BLL.DTOs
 {
