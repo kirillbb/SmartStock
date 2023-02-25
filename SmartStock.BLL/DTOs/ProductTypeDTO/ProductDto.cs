@@ -1,6 +1,4 @@
 ﻿using SmartStock.BLL.DTOs.OrderTypeDTO;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SmartStock.BLL.DTOs.ProductTypeDTO
 {

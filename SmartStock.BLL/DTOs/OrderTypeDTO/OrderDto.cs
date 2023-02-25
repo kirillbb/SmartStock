@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace SmartStock.BLL.DTOs.OrderTypeDTO
+﻿namespace SmartStock.BLL.DTOs.OrderTypeDTO
 {
     public class OrderDto
     {
@@ -14,7 +11,7 @@ namespace SmartStock.BLL.DTOs.OrderTypeDTO
         public decimal TotalPrice { get; set; }
 
         public OrderStatus Status { get; set; }
-        
+
         public ICollection<OrderProductDto> OrderProducts { get; set; }
     }
 }
