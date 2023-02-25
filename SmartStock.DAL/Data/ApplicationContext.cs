@@ -1,4 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SmartStock.CORE.Entities;
+using SmartStock.CORE.Entities.OrderType;
+using SmartStock.CORE.Entities.ProductType;
 
 namespace SmartStock.DAL.Data
 {
@@ -13,7 +16,13 @@ namespace SmartStock.DAL.Data
         {
         }
 
-        //DbSets
+        public virtual DbSet<Product> Products { get; set; }
+
+        public virtual DbSet<Order> Orders { get; set; }
+
+        public virtual DbSet<OrderProduct> OrderProducts { get; set; }
+
+        public virtual DbSet<User> Users { get; set; }
 
         public static OptionsBuilder OptionsBuilder => new OptionsBuilder();
 
