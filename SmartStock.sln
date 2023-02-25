@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.DAL", "SmartStock.DAL\SmartStock.DAL.csproj", "{F4B7A27F-B2BD-4A77-BBDA-DBD74504A8A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.DAL", "SmartStock.DAL\SmartStock.DAL.csproj", "{F4B7A27F-B2BD-4A77-BBDA-DBD74504A8A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.BLL", "SmartStock.BLL\SmartStock.BLL.csproj", "{0CC0D0AA-1D9B-4C17-8DCB-14665F06DA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.BLL", "SmartStock.BLL\SmartStock.BLL.csproj", "{0CC0D0AA-1D9B-4C17-8DCB-14665F06DA4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.TESTS", "SmartStock.TESTS\SmartStock.TESTS.csproj", "{144782A1-AF50-4920-BFA5-B948B7D7D868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.TESTS", "SmartStock.TESTS\SmartStock.TESTS.csproj", "{144782A1-AF50-4920-BFA5-B948B7D7D868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.WEB", "SmartStock.WEB\SmartStock.WEB.csproj", "{550079C4-BFF2-4AE8-A6AA-CB4D537B9B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.WEB", "SmartStock.WEB\SmartStock.WEB.csproj", "{550079C4-BFF2-4AE8-A6AA-CB4D537B9B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.CORE", "SmartStock.CORE\SmartStock.CORE.csproj", "{F7496E0B-52F7-4D92-B790-C394B2B02E54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{550079C4-BFF2-4AE8-A6AA-CB4D537B9B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{550079C4-BFF2-4AE8-A6AA-CB4D537B9B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{550079C4-BFF2-4AE8-A6AA-CB4D537B9B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7496E0B-52F7-4D92-B790-C394B2B02E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7496E0B-52F7-4D92-B790-C394B2B02E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7496E0B-52F7-4D92-B790-C394B2B02E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7496E0B-52F7-4D92-B790-C394B2B02E54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
