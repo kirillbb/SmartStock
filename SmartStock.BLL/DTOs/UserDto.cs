@@ -5,7 +5,6 @@ namespace SmartStock.BLL.DTOs
 {
     public class UserDto
     {
-        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
