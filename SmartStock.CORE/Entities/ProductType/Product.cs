@@ -1,13 +1,11 @@
 ﻿using SmartStock.CORE.Entities.OrderType;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SmartStock.CORE.Entities.ProductType
 {
     public class Product
     {
         [Key]
-        [Column("ProductId")]
         public int Id { get; set; }
 
         [Required]
