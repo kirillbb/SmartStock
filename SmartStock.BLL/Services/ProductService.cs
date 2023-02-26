@@ -10,7 +10,7 @@ namespace SmartStock.BLL.Services
             throw new NotImplementedException();
         }
 
-        public Task DeleteAsync(Guid id)
+        public Task DeleteAsync(int id)
         {
             throw new NotImplementedException();
         }
@@ -20,7 +20,7 @@ namespace SmartStock.BLL.Services
             throw new NotImplementedException();
         }
 
-        public Task<ProductDto> GetAsync(Guid id)
+        public Task<ProductDto> GetAsync(int id)
         {
             throw new NotImplementedException();
         }

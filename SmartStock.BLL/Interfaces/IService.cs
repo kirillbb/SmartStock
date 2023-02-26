@@ -4,11 +4,11 @@
     {
         Task CreateAsync(T item);
 
-        Task DeleteAsync(Guid id);
+        Task DeleteAsync(int id);
 
         Task UpdateAsync(T item);
 
-        Task<T> GetAsync(Guid id);
+        Task<T> GetAsync(int id);
 
         Task<IEnumerable<T>> GetAllAsync();
     }
