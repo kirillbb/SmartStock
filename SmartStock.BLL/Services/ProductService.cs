@@ -1,33 +1,50 @@
 ﻿using SmartStock.BLL.DTOs.ProductType;
 using SmartStock.BLL.Interfaces;
+using SmartStock.BLL.Mappers;
+using SmartStock.CORE.Entities.ProductType;
+using SmartStock.DAL.Data;
+using SmartStock.DAL.Interfaces;
+using SmartStock.DAL.Repositories;
 
 namespace SmartStock.BLL.Services
 {
     public class ProductService : IService<ProductDto>
     {
-        public Task CreateAsync(ProductDto item)
+        private readonly IRepository<Product> _repository;
+
+        public ProductService()
         {
-            throw new NotImplementedException();
+            _repository = new GenericRepository<Product>(new ApplicationContext());
         }
 
-        public Task DeleteAsync(int id)
+        public async Task CreateAsync(ProductDto item)
         {
-            throw new NotImplementedException();
+            await _repository.CreateAsync(Mapper<ProductDto, Product>.Map(item));
         }
 
-        public Task<IEnumerable<ProductDto>> GetAllAsync()
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            await _repository.DeleteAsync(id);
         }
 
-        public Task<ProductDto> GetAsync(int id)
+        public async Task<IEnumerable<ProductDto>>? GetPagedAsync(int page, int pageSize)
         {
-            throw new NotImplementedException();
+            return Mapper<Product, ProductDto>.MapAll(await _repository.GetPagedAsync(page, pageSize));
         }
 
-        public Task UpdateAsync(ProductDto item)
+        public async Task<IEnumerable<ProductDto>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return Mapper<Product, ProductDto>.MapAll(await _repository.GetAllAsync());
+        }
+
+        public async Task<ProductDto> GetAsync(int id)
+        {
+            return Mapper<Product, ProductDto>.Map(await  _repository.GetAsync(id));
+        }
+
+        public async Task UpdateAsync(ProductDto item)
+        {
+            await _repository.UpdateAsync(Mapper<ProductDto, Product>.Map(item));
         }
     }
 }

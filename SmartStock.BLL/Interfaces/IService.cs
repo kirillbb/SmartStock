@@ -10,6 +10,8 @@
 
         Task<T> GetAsync(int id);
 
+        Task<IEnumerable<T>>? GetPagedAsync(int page, int pageSize);
+
         Task<IEnumerable<T>> GetAllAsync();
     }
 }
