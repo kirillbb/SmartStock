@@ -21,7 +21,5 @@ namespace SmartStock.CORE.Entities.OrderType
 
         [Required]
         public int Quantity { get; set; }
-
-        
     }
 }
