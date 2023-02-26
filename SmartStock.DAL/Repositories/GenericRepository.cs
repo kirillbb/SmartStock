@@ -38,7 +38,7 @@ namespace SmartStock.DAL.Repositories
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<IEnumerable<TEntity>>? GetPaged(int page, int pageSize)
+        public async Task<IEnumerable<TEntity>>? GetPagedAsync(int page, int pageSize)
         {
             var items = await _dbSet
                 .Skip((page - 1) * pageSize)
