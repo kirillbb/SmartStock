@@ -1,6 +1,4 @@
-﻿using SmartStock.BLL.DTOs.OrderType;
-
-namespace SmartStock.BLL.DTOs
+﻿namespace SmartStock.BLL.DTOs
 {
     public class UserDto
     {
@@ -8,8 +6,8 @@ namespace SmartStock.BLL.DTOs
 
         public string Name { get; set; }
 
-        public string Adress { get; set; }
+        public string Address { get; set; }
 
-        public ICollection<OrderDto>? Orders { get; set; }
+        public ICollection<UserOrderDto>? UserOrders { get; set; }
     }
 }

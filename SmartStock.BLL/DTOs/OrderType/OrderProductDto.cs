@@ -8,12 +8,12 @@ namespace SmartStock.BLL.DTOs.OrderType
 
         public int OrderId { get; set; }
 
-        public int ProductId { get; set; }
-
-        public int Quantity { get; set; }
-
         public OrderDto Order { get; set; }
 
+        public int ProductId { get; set; }
+
         public ProductDto Product { get; set; }
+
+        public int Quantity { get; set; }
     }
 }
