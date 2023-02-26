@@ -2,7 +2,7 @@
 
 namespace SmartStock.BLL.ViewModels.ProductType
 {
-    internal class ProductViewModel
+    public class ProductViewModel
     {
         public int Id { get; set; }
 

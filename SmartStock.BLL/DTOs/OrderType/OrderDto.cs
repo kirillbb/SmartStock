@@ -4,9 +4,13 @@
     {
         public int Id { get; set; }
 
-        public string CustomerId { get; set; }
+        public int UserId { get; set; }
+
+        public UserOrderDto UserOrder { get; set; }
 
         public string CustomerAddress { get; set; }
+
+        public DateTime Date { get; set; }
 
         public decimal TotalPrice { get; set; }
 
