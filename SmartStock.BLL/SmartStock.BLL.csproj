@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\SmartStock.DAL\SmartStock.DAL.csproj" />
   </ItemGroup>
 
 </Project>
