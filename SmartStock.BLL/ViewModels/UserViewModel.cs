@@ -1,15 +1,13 @@
-﻿using SmartStock.BLL.ViewModels.OrderType;
-
-namespace SmartStock.BLL.ViewModels
+﻿namespace SmartStock.BLL.ViewModels
 {
-    internal class UserViewModel
+    public class UserViewModel
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
 
-        public string Adress { get; set; }
+        public string Address { get; set; }
 
-        public ICollection<OrderViewModel>? Orders { get; set; }
+        public ICollection<UserOrderViewModel>? UserOrders { get; set; }
     }
 }

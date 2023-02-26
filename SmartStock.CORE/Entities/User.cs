@@ -9,7 +9,7 @@ namespace SmartStock.CORE.Entities
 
         public string Name { get; set; }
 
-        public string Adress { get; set; }
+        public string Address { get; set; }
 
         public ICollection<UserOrder>? UserOrders { get; set; }
     }

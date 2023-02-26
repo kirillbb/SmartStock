@@ -2,13 +2,17 @@
 
 namespace SmartStock.BLL.ViewModels.OrderType
 {
-    internal class OrderViewModel
+    public class OrderViewModel
     {
         public int Id { get; set; }
 
-        public string CustomerId { get; set; }
+        public int UserId { get; set; }
+
+        public UserOrderViewModel UserOrder { get; set; }
 
         public string CustomerAddress { get; set; }
+
+        public DateTime Date { get; set; }
 
         public decimal TotalPrice { get; set; }
 
