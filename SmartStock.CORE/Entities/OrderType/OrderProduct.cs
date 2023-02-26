@@ -7,20 +7,19 @@ namespace SmartStock.CORE.Entities.OrderType
     public class OrderProduct
     {
         [Key]
-        [Column("OrderProductId")]
         public int Id { get; set; }
 
-        [Required]
+        [ForeignKey("Order")]
         public int OrderId { get; set; }
 
-        [Required]
+        public Order Order { get; set; }
+
+        [ForeignKey("Product")]
         public int ProductId { get; set; }
+
+        public Product Product { get; set; }
 
         [Required]
         public int Quantity { get; set; }
-
-        public Order Order { get; set; }
-        
-        public Product Product { get; set; }
     }
 }

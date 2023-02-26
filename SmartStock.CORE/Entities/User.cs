@@ -1,5 +1,4 @@
-﻿using SmartStock.CORE.Entities.OrderType;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace SmartStock.CORE.Entities
 {
@@ -12,6 +11,6 @@ namespace SmartStock.CORE.Entities
 
         public string Adress { get; set; }
 
-        public ICollection<Order>? Orders { get; set; }
+        public ICollection<UserOrder>? UserOrders { get; set; }
     }
 }
