@@ -14,7 +14,8 @@ namespace SmartStock.BLL.Services
 
         public ProductService()
         {
-            _repository = new GenericRepository<Product>(new ApplicationContext());
+            DbContextFactory contextFactory = new DbContextFactory();
+            _repository = new GenericRepository<Product>(contextFactory.CreateDbContext());
         }
 
         public async Task CreateAsync(ProductDto item)
@@ -39,7 +40,7 @@ namespace SmartStock.BLL.Services
 
         public async Task<ProductDto> GetAsync(int id)
         {
-            return Mapper<Product, ProductDto>.Map(await  _repository.GetAsync(id));
+            return Mapper<Product, ProductDto>.Map(await _repository.GetAsync(id));
         }
 
         public async Task UpdateAsync(ProductDto item)
