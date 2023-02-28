@@ -20,7 +20,7 @@
             return destination;
         }
 
-        public static IEnumerable<TDestination> MapAll(IEnumerable<TSource> source)
+        public static List<TDestination> MapAll(IEnumerable<TSource> source)
         {
             List<TDestination> destinations = new List<TDestination>();
             foreach (var item in source)

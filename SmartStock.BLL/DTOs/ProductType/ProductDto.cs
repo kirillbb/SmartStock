@@ -12,6 +12,6 @@ namespace SmartStock.BLL.DTOs.ProductType
 
         public int Stock { get; set; }
 
-        public ICollection<OrderProductDto> OrderProducts { get; set; }
+        public ICollection<OrderProductDto>? OrderProducts { get; set; }
     }
 }

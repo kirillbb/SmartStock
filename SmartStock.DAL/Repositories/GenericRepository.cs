@@ -23,12 +23,11 @@ namespace SmartStock.DAL.Repositories
 
         public async Task DeleteAsync(int id)
         {
-            var course = await GetAsync(id);
-            _dbSet.Remove(course);
+            _dbSet.Remove(await GetAsync(id));
             await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<TEntity> Find(Func<TEntity, bool> predicate)
+        public List<TEntity> Find(Func<TEntity, bool> predicate)
         {
             return _dbSet.AsNoTracking().Where(predicate).ToList();
         }
@@ -38,17 +37,7 @@ namespace SmartStock.DAL.Repositories
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<IEnumerable<TEntity>>? GetPagedAsync(int page, int pageSize)
-        {
-            var items = await _dbSet
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToListAsync();
-
-            return items;
-        }
-
-        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        public async Task<List<TEntity>> GetAllAsync()
         {
             return await _dbSet.AsNoTracking().ToListAsync();
         }

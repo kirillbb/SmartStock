@@ -23,6 +23,6 @@ namespace SmartStock.CORE.Entities.OrderType
         [Required]
         public OrderStatus Status { get; set; }
 
-        public ICollection<OrderProduct> OrderProducts { get; set; }
+        public ICollection<OrderProduct>? OrderProducts { get; set; }
     }
 }

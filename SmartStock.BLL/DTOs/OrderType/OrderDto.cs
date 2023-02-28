@@ -16,7 +16,7 @@
 
         public OrderStatus Status { get; set; }
 
-        public ICollection<OrderProductDto> OrderProducts { get; set; }
+        public ICollection<OrderProductDto>? OrderProducts { get; set; }
     }
 
     public enum OrderStatus
