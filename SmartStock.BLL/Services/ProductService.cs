@@ -28,9 +28,9 @@ namespace SmartStock.BLL.Services
             await _repository.DeleteAsync(id);
         }
 
-        public async Task<List<ProductDto>>? GetPagedAsync(int page, int pageSize)
+        public async Task<List<ProductDto>>? GetAllPagedAsync(int page, int pageSize)
         {
-            return Mapper<Product, ProductDto>.MapAll(await _repository.GetPagedAsync(page, pageSize));
+            throw new NotImplementedException();
         }
 
         public async Task<List<ProductDto>> GetAllAsync()

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.WEB", "SmartStoc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.CORE", "SmartStock.CORE\SmartStock.CORE.csproj", "{F7496E0B-52F7-4D92-B790-C394B2B02E54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.Tests", "SmartStock.Tests\SmartStock.Tests.csproj", "{949F571A-E23E-40ED-9D59-2CBA2E3E9823}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.Tests", "SmartStock.Tests\SmartStock.Tests.csproj", "{949F571A-E23E-40ED-9D59-2CBA2E3E9823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.ConsoleApp", "SmartStock.Console\SmartStock.ConsoleApp.csproj", "{572EF992-500B-484E-82C1-AB0B0341A842}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{949F571A-E23E-40ED-9D59-2CBA2E3E9823}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{949F571A-E23E-40ED-9D59-2CBA2E3E9823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{949F571A-E23E-40ED-9D59-2CBA2E3E9823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572EF992-500B-484E-82C1-AB0B0341A842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572EF992-500B-484E-82C1-AB0B0341A842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572EF992-500B-484E-82C1-AB0B0341A842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572EF992-500B-484E-82C1-AB0B0341A842}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

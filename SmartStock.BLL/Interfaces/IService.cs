@@ -10,7 +10,7 @@
 
         Task<T> GetAsync(int id);
 
-        Task<List<T>>? GetPagedAsync(int page, int pageSize);
+        Task<List<T>>? GetAllPagedAsync(int page, int pageSize);
 
         Task<List<T>> GetAllAsync();
     }

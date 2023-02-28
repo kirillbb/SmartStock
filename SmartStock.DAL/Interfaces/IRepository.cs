@@ -2,8 +2,6 @@
 {
     public interface IRepository<T> where T : class
     {
-        Task<List<T>>? GetPagedAsync(int page, int pageSize);
-
         Task<List<T>> GetAllAsync();
 
         Task<T> GetAsync(int id);

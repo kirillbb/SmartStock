@@ -38,9 +38,9 @@ namespace SmartStock.BLL.Services
             return Mapper<Order, OrderDto>.Map(await _repository.GetAsync(id));
         }
 
-        public async Task<List<OrderDto>>? GetPagedAsync(int page, int pageSize)
+        public async Task<List<OrderDto>>? GetAllPagedAsync(int page, int pageSize)
         {
-            return Mapper<Order, OrderDto>.MapAll(await _repository.GetPagedAsync(page, pageSize));
+            throw new NotImplementedException();
         }
 
         public async Task UpdateAsync(OrderDto item)
