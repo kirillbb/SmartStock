@@ -28,12 +28,12 @@ namespace SmartStock.BLL.Services
             await _repository.DeleteAsync(id);
         }
 
-        public async Task<IEnumerable<ProductDto>>? GetPagedAsync(int page, int pageSize)
+        public async Task<List<ProductDto>>? GetPagedAsync(int page, int pageSize)
         {
             return Mapper<Product, ProductDto>.MapAll(await _repository.GetPagedAsync(page, pageSize));
         }
 
-        public async Task<IEnumerable<ProductDto>> GetAllAsync()
+        public async Task<List<ProductDto>> GetAllAsync()
         {
             return Mapper<Product, ProductDto>.MapAll(await _repository.GetAllAsync());
         }

@@ -27,7 +27,7 @@ namespace SmartStock.DAL.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<TEntity> Find(Func<TEntity, bool> predicate)
+        public List<TEntity> Find(Func<TEntity, bool> predicate)
         {
             return _dbSet.AsNoTracking().Where(predicate).ToList();
         }
@@ -37,7 +37,7 @@ namespace SmartStock.DAL.Repositories
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<IEnumerable<TEntity>>? GetPagedAsync(int page, int pageSize)
+        public async Task<List<TEntity>>? GetPagedAsync(int page, int pageSize)
         {
             var items = await _dbSet
                 .Skip((page - 1) * pageSize)
@@ -47,7 +47,7 @@ namespace SmartStock.DAL.Repositories
             return items;
         }
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        public async Task<List<TEntity>> GetAllAsync()
         {
             return await _dbSet.AsNoTracking().ToListAsync();
         }

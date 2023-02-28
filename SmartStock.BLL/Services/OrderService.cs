@@ -28,7 +28,7 @@ namespace SmartStock.BLL.Services
             await _repository.DeleteAsync(id);
         }
 
-        public async Task<IEnumerable<OrderDto>> GetAllAsync()
+        public async Task<List<OrderDto>> GetAllAsync()
         {
             return Mapper<Order, OrderDto>.MapAll(await _repository.GetAllAsync());
         }
@@ -38,7 +38,7 @@ namespace SmartStock.BLL.Services
             return Mapper<Order, OrderDto>.Map(await _repository.GetAsync(id));
         }
 
-        public async Task<IEnumerable<OrderDto>>? GetPagedAsync(int page, int pageSize)
+        public async Task<List<OrderDto>>? GetPagedAsync(int page, int pageSize)
         {
             return Mapper<Order, OrderDto>.MapAll(await _repository.GetPagedAsync(page, pageSize));
         }
