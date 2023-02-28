@@ -23,8 +23,7 @@ namespace SmartStock.DAL.Repositories
 
         public async Task DeleteAsync(int id)
         {
-            var course = await GetAsync(id);
-            _dbSet.Remove(course);
+            _dbSet.Remove(await GetAsync(id));
             await _context.SaveChangesAsync();
         }
 
