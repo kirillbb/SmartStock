@@ -17,6 +17,6 @@ namespace SmartStock.CORE.Entities.ProductType
         [Required]
         public int Stock { get; set; }
 
-        public ICollection<OrderProduct> OrderProducts { get; set; }
+        public ICollection<OrderProduct>? OrderProducts { get; set; }
     }
 }
