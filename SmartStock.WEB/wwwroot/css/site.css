@@ -16,3 +16,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+a:hover img {
+    filter: brightness(0.5) saturate(2);
+}
