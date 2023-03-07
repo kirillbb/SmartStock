@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.CORE", "SmartSto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.Tests", "SmartStock.Tests\SmartStock.Tests.csproj", "{949F571A-E23E-40ED-9D59-2CBA2E3E9823}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStock.ConsoleApp", "SmartStock.Console\SmartStock.ConsoleApp.csproj", "{572EF992-500B-484E-82C1-AB0B0341A842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartStock.ConsoleApp", "SmartStock.Console\SmartStock.ConsoleApp.csproj", "{572EF992-500B-484E-82C1-AB0B0341A842}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
