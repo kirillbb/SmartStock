@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using SmartStock.BLL.DTOs.ProductType;
 using SmartStock.BLL.Mappers;
 using SmartStock.BLL.Services;
@@ -94,6 +93,5 @@ namespace SmartStock.WEB.Controllers
             await _productService.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
-
     }
 }
