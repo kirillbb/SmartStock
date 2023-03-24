@@ -20,3 +20,25 @@ body {
 a:hover img {
     filter: brightness(0.5) saturate(2);
 }
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination li a {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    padding: 6px 12px;
+    margin-right: 5px;
+}
+
+.pagination li.active a {
+    background-color: #fff;
+    color: #007bff;
+    border-color: #007bff;
+}

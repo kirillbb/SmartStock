@@ -1,4 +1,8 @@
-﻿@model List<SmartStock.BLL.ViewModels.ProductType.ProductViewModel>
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using SmartStock.BLL.ViewModels.ProductType
+@using X.PagedList.Web.Common;
+@model IPagedList<ProductViewModel>
 @{
     ViewData["Title"] = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -54,6 +58,12 @@
                     }
                 </tbody>
             </table>
+            <div class="pager">
+                @Html.PagedListPager(Model, pageNumber => Url.Action("Index", new { pageNumber }),
+                new PagedListRenderOptions {
+                UlElementClasses = new List<string> { "pagination" }
+                })
+            </div>
         </div>
         <div class="col"></div>
     </div>
