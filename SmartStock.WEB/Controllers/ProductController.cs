@@ -3,6 +3,7 @@ using SmartStock.BLL.DTOs.ProductType;
 using SmartStock.BLL.Mappers;
 using SmartStock.BLL.Services;
 using SmartStock.BLL.ViewModels.ProductType;
+using X.PagedList;
 
 namespace SmartStock.WEB.Controllers
 {
@@ -15,11 +16,12 @@ namespace SmartStock.WEB.Controllers
             _productService = new ProductService();
         }
 
-        public async Task<IActionResult> IndexAsync()
+        public async Task<IActionResult> IndexAsync(int pageNumber = 1)
         {
-            // make it paged
-            IEnumerable<ProductViewModel> products = Mapper<ProductDto, ProductViewModel>.MapAll(await _productService.GetAllAsync());
-            return products != null ? View(products) : NotFound();
+            var products = Mapper<ProductDto, ProductViewModel>.MapAll(await _productService.GetAllAsync());
+            int pageSize = 10;
+
+            return View(products.ToPagedList(pageNumber, pageSize));
         }
 
         public async Task<IActionResult> Details(int id)
