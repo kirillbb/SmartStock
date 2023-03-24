@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.7" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SmartStock.BLL\SmartStock.BLL.csproj" />
   </ItemGroup>
 
